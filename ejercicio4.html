@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div clas="logo">
+            <h1>Videojuegos Cash</h1>
+        </div>
+         <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+         </nav>
+    </header>
+    <main>
+        <section id="inicio">
+            <h2>Bienvienidos a Videojuegos Cash</h2>
+            <p>Los mejores videojuegos a los mejores precios</p>
+            <article itemscope itemtype="https://es.wikipedia.org/wiki/Wiki">
+                <img src="images/mario.png" alt="Videojuego" itemprop="Videojuego de mario">
+                <h3>Mario Bros</h3>
+            </article>
+        </section>
+        <section id="contacto">
+            <h2>contacto</h2>
+            <form action="#" metodo="post">
+                <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required minlength="3">
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea name="mensaje" id="mensaje" required minlength="15"></textarea>
+                    </div>
+                    <div>
+                        <button>Enviar informacion</button>
+                    </div>
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>
