@@ -1,0 +1,100 @@
+:root{
+ 
+    --color-primary:#003366; 
+    --color-primary-light: #004c99;
+    --color-secundary: #ffd700;
+    --color-background : #f4f4f4;
+    --color-text: #333333;
+    --color-text-light: #666666;
+    --color-white: #fff;/* #Ffffff */
+
+    /* tipo de fuentes */
+    --font-family: 'Roboto', arial, sans-serif;/* si no encuentra roboto, va a pasar a la tipografia de arial, si no hay esta entonces a sans */
+    --font-size-base: 16px;
+    --font-size-large:1.25rem;
+    --font-size-xl: 2rem;
+    --font-size-xxl: 3.5rem;
+
+    --spacing-small:8px;
+    --spacing-medium:16px;
+    --spacing-large:24px;
+    --spacing-xl:32px;
+    --spacing-xxl:48px;
+
+}
+*{
+    margin:0;/* px */
+    padding:0;
+    box-sizing: border-box;/* mejor control de al ancho largo de la pagina */
+}
+
+h1{
+    color:red;
+    
+}
+
+body{
+    font-family: var(--font-family);/* donde font-familt es un atributo */
+    font-size: var(--font-size-base);/* donde font-familt es un atributo */
+    color: var(--color-text);
+    background-color:  var(--color-background);
+
+}
+header{
+    display:flex;
+    justify-content: space-between;/* espacio entre h1 y nav */
+    align-items: center;/* centrar los elementos veticalmente */
+    background-color: var(--color-primary);/* se prioriza este color frente al body */
+    color: var(--color-text);
+}
+header h1{
+    font-size:  var(--font-size-xl);
+    font-weight: 700;
+    color: var(--color-white);
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap:var(--spacing-large);
+    
+}
+nav ul li a{
+
+    color: var(--color-white);
+    text-decoration: none;
+    padding: var(--spacing-small), var(--spacing-medium);/* el primer var es de arriba y abajo, y ele segundo drecha e izquierda */
+    border-radius:4px;
+}
+nav ul li a:hover{
+    background-color: #fff;
+    color: var(--color-secundary);
+}
+
+#inicio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:  center;
+    text-align: center;
+        padding: var(--spacing-xxl) var(--spacing-xl);/* el primer var es de arriba y abajo, y ele segundo drecha e izquierda */
+    min-height: 60vh;/* sustituo a padding */
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secundary));/* esto es para el degradado */
+    color: var(--color-white);
+}
+
+/*main section h2  o...*/
+#inicio h2{
+    font-size: var(--font-size-xxl);/* para la altura d ela letra */
+    font-weight: 100;/* para la ancho d ela letra */
+}
+#inicio p{
+    font-size: var(--font-size-large);
+}
+#inicio a{
+    font-size: var(--font-size-xxl);
+    font-weight: var(--font-size-base);
+    background-color: var(--color-secundary);
+    color:var(--color-text);
+    border-radius: 8px;
+    text-decoration: none;/* le quita la linea de abajo y otro personalizaciones */
+}
